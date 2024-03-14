@@ -1,0 +1,345 @@
+/*.poppins-regular {*/
+/*    font-family: "Poppins", sans-serif;*/
+/*    font-weight: 400;*/
+/*    font-style: normal;*/
+/*}*/
+
+/*.poppins-bold {*/
+/*    font-family: "Poppins", sans-serif;*/
+/*    font-weight: 700;*/
+/*    font-style: normal;*/
+/*}*/
+
+/*.poppins-bold-italic {*/
+/*    font-family: "Poppins", sans-serif;*/
+/*    font-weight: 700;*/
+/*    font-style: italic;*/
+/*}*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    color: #000000;
+    -webkit-background-clip: text;
+}
+
+.containerWithImage {
+    background-image: url("/assets/bg.png");
+    padding-bottom: 250px;
+}
+
+header {
+    border-bottom: 1px solid #FFFFFF;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleHeader {
+    font-size: 20px;
+    color: #F96F33;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    padding: 10px;
+}
+
+.menuHeader {
+    font-size: 19px;
+    color: #FFFFFF;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.menuHeader li {
+    padding-right: 25px;
+    margin: auto;
+}
+
+.linksHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.linksHeader img {
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:active {
+    color: #F96F33;
+}
+
+.titleMain {
+    font-size: 150px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+}
+
+.descMain {
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-top: 150px;
+    text-align: center;
+    font-size: 19px;
+}
+
+button {
+    color: #FFFFFF;
+    background-color: #F96F33;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    border: none;
+    display: block;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.containerTopPlayers {
+    background-color: rgba(109, 109, 109, 50%);
+    padding: 100px;
+}
+
+.titleTopPlayers {
+    margin: 0 0 50px 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px; /* Размер текста */
+    background: radial-gradient(circle, #FFFFFF, #F96F33, #F96F33, #FFFFFF);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.containerCards {
+    display: flex;
+}
+
+.cardTopPlayer {
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 50px 50px 0 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardTopPlayer p {
+    margin: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+span {
+    color: #F96F33;
+}
+
+.wrapper {
+    height: 350px;
+    margin: 50px auto 100px auto;
+    position: relative;
+    width: 700px;
+}
+
+.slider {
+    background-color: #ddd;
+    height: inherit;
+    overflow: hidden;
+    position: relative;
+    width: inherit;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    -o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.wrapper > input {
+    display: none;
+}
+
+.slides {
+    height: inherit;
+    position: absolute;
+    width: inherit;
+}
+
+.slide1 { background-image: url(https://c4.wallpaperflare.com/wallpaper/772/402/471/car-nismo-nissan-skyline-gt-r-r34-nismo-nissan-skyline-gt-r-r34-skyline-gtr-hd-wallpaper-preview.jpg); }
+.slide2 { background-image: url(https://c4.wallpaperflare.com/wallpaper/744/52/874/the-sun-japan-machine-tuning-wallpaper-preview.jpg); }
+.slide3 { background-image: url(https://c4.wallpaperflare.com/wallpaper/791/650/541/white-night-tuning-toyota-wallpaper-preview.jpg); }
+.slide4 { background-image: url(https://c4.wallpaperflare.com/wallpaper/831/999/804/mazda-rx7-tuning-yellow-wallpaper-preview.jpg); }
+.slide5 { background-image: url(https://c4.wallpaperflare.com/wallpaper/318/745/119/white-toyota-supra-1993-wallpaper-preview.jpg); }
+
+.wrapper .controls {
+    left: 50%;
+    margin-left: -98px;
+    position: absolute;
+}
+
+.wrapper label {
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 25px 12px 0 16px;
+    position: relative;
+    width: 8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.wrapper label:after {
+    border: 2px solid #ddd;
+    content: " ";
+    display: block;
+    height: 12px;
+    left: -4px;
+    position: absolute;
+    top: -4px;
+    width: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.wrapper label {
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 25px 12px 0 16px;
+    position: relative;
+    width: 8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background ease-in-out .5s;
+    -moz-transition: background ease-in-out .5s;
+    -o-transition: background ease-in-out .5s;
+    transition: background ease-in-out .5s;
+}
+
+.wrapper label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5) {
+    background: #ddd;
+}
+
+.slides {
+    height: inherit;
+    opacity: 0;
+    position: absolute;
+    width: inherit;
+    z-index: 0;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    -moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    -o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4,
+#slide5:checked ~ .slider > .slide5 {
+    opacity: 1;
+    z-index: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.cardReg {
+    padding: 15px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    margin: auto;
+    width: 30%;
+}
+
+.cardReg p{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.cardReg input {
+    display: block;
+    margin: 15px auto;
+    border: 1px solid #909090;
+    padding: 10px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.googleButton {
+    background-color: #FFFFFF;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    border: 1px solid #909090;
+    margin: 15px auto;
+    border-radius: 10px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.googleButton img {
+    margin: 0;
+}
