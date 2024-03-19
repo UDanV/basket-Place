@@ -122,6 +122,13 @@ a:active {
     font-size: 19px;
 }
 
+span {
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
 button {
     color: #FFFFFF;
     background-color: #F96F33;
@@ -135,7 +142,7 @@ button {
     border-radius: 10px;
     cursor: pointer;
 }
-
+/* Топ лист */
 .containerTopPlayers {
     background-color: rgba(109, 109, 109, 50%);
     padding: 100px;
@@ -176,13 +183,13 @@ button {
     font-size: 25px;
 }
 
-span {
+.cardTopPlayer span {
     color: #F96F33;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 25px;
 }
-
+/* Новостной слайдер */
 .wrapper {
     height: 350px;
     margin: 50px auto 100px auto;
@@ -288,10 +295,10 @@ span {
     -moz-transform: scale(1.5);
     -o-transform: scale(1.5);
     transform: scale(1.5);
-    -webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-    -moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-    -o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    /*-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;*/
+    /*-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;*/
+    /*-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;*/
+    /*transition: transform ease-in-out .5s, opacity ease-in-out .5s;*/
 }
 
 #slide1:checked ~ .slider > .slide1,
@@ -411,7 +418,7 @@ span {
 
 .avatarProfile {
     display: flex;
-    align-items: start;
+    align-items: end;
     padding: 15px;
     justify-content: center;
 }
@@ -419,7 +426,113 @@ span {
 .editImg {
     width: 35px;
     height: 35px;
-    position: absolute;
-    top: 350px;
-    right: 600px;
+}
+
+.containerTeam {
+    align-items: center;
+}
+
+.linksTeam {
+    display: flex;
+    justify-content: center;
+}
+
+.logoTeam {
+    margin: auto;
+}
+
+.linksTeam img {
+    width: 35px;
+    height: 35px;
+    margin: 0 15px 15px 0;
+}
+
+.containerTeam img {
+    display: flex;
+}
+
+.containerTeam h2 {
+    text-align: center;
+}
+
+.cardTeamPlayers {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.cardTeamPlayers span {
+    font-size: 15px;
+}
+
+.cardTeamPlayers img {
+    width: 45px;
+    height: 45px;
+    margin: 0 10px 0 0;
+}
+
+.leaderPlayer {
+    display: flex;
+    align-items: center;
+}
+
+.leaderPlayer img {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+}
+
+.infoPlayer p{
+    font-size: 20px;
+}
+
+.cardTeamPlayers p {
+    margin-right: 10px;
+}
+
+.listPlayers {
+    padding-left: 20px;
+    list-style: none inside none;
+}
+
+.listPlayers li {
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.listPlayers span {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.containerMatchScore {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.containerMatchPlayers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.matchTeam {
+    display: block;
+}
+
+.matchTeamPlayer img, span {
+    width: 45px;
+    height: 45px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.matchTeamPlayer {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding: 10px;
 }
