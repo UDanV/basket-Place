@@ -26,10 +26,10 @@
 
 body {
     margin: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 h1{
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
     text-align: center;
     font-size: 40px;
@@ -80,21 +80,19 @@ h1{
     cursor: pointer;
 }
 
-/* Добавляем новый класс для body, который будет предотвращать прокрутку */
 .body-no-scroll {
     overflow: hidden;
     height: 100%;
 }
 
 h2 {
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 25px;
 }
 
 .containerWithImage {
     background-image: url("/static/bg.png");
-    padding-bottom: 250px;
+    padding-bottom: 275px;
 }
 
 header {
@@ -109,7 +107,6 @@ header {
 .titleHeader {
     font-size: 20px;
     color: #F96F33;
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: italic;
     padding: 10px;
@@ -119,7 +116,6 @@ header {
     font-size: 19px;
     color: #FFFFFF;
     list-style: none;
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
     display: flex;
     justify-content: center;
@@ -155,7 +151,6 @@ a:active {
 
 .titleMain {
     font-size: 150px;
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
     color: #FFFFFF;
     text-align: center;
@@ -164,7 +159,6 @@ a:active {
 
 .descMain {
     color: #FFFFFF;
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
     margin-top: 150px;
     text-align: center;
@@ -173,7 +167,6 @@ a:active {
 
 span {
     color: #000000;
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 25px;
 }
@@ -182,7 +175,6 @@ button {
     color: #FFFFFF;
     background-color: #F96F33;
     font-size: 25px;
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
     border: none;
     display: block;
@@ -199,10 +191,9 @@ button {
 
 .titleTopPlayers {
     margin: 0 0 50px 0;
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
     text-align: center;
-    font-size: 40px; /* Размер текста */
+    font-size: 40px;
     background: radial-gradient(circle, #FFFFFF, #F96F33, #F96F33, #FFFFFF);
     -webkit-background-clip: text;
     color: transparent;
@@ -227,14 +218,12 @@ button {
 
 .cardTopPlayer p {
     margin: 5px;
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 25px;
 }
 
 .cardTopPlayer span {
     color: #F96F33;
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 25px;
 }
@@ -373,7 +362,6 @@ button {
 
 .cardReg p{
     text-align: center;
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: italic;
     font-size: 25px;
@@ -396,7 +384,6 @@ button {
     align-items: center;
     color: #000000;
     font-size: 20px;
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
     border: 1px solid #909090;
     margin: 15px auto;
@@ -419,7 +406,6 @@ button {
 
 .cardTopSolo {
     display: flex;
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: italic;
     border: 1px solid #848484;
@@ -448,7 +434,6 @@ button {
     font-size: 19px;
     color: #000000;
     list-style: none;
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
     display: flex;
     justify-content: center;
@@ -491,9 +476,10 @@ button {
 }
 
 .linksTeam img {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     margin: 0 15px 15px 0;
+    cursor: pointer;
 }
 
 .containerTeam img {
@@ -506,7 +492,6 @@ button {
 
 .cardTeamPlayers {
     display: flex;
-    font-family: "Poppins", sans-serif;
     align-items: center;
     padding: 10px;
     font-size: 25px;
@@ -548,7 +533,6 @@ button {
 
 .listPlayers li {
     font-size: 25px;
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
 }
 
