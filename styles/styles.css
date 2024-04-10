@@ -37,6 +37,50 @@ h1{
     -webkit-background-clip: text;
 }
 
+h2 {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+header {
+    border-bottom: 1px solid #FFFFFF;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span {
+    color: #000000;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+button {
+    color: #FFFFFF;
+    background-color: #F96F33;
+    font-size: 25px;
+    font-weight: 700;
+    border: none;
+    display: block;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out; /* Плавная анимация */
+}
+
+button:hover {
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2); /* Эффект тени при наведении */
+}
+
+/* Модальное окно поиска */
 .modal {
     display: none;
     position: fixed;
@@ -53,12 +97,20 @@ h1{
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 10px;
     display: flex;
     border: 1px solid #888;
     width: 70%;
     justify-content: space-between;
+}
+
+.modal-content img {
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    cursor: pointer;
+    margin: 10px;
 }
 
 .close {
@@ -67,7 +119,7 @@ h1{
 
 .inputModal {
     border: 1px solid #7F7F7F;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 20px;
     width: 100%;
     margin: auto;
@@ -85,31 +137,22 @@ h1{
     height: 100%;
 }
 
-h2 {
-    font-weight: 700;
-    font-size: 25px;
-}
-
+/* Главная */
 .containerWithImage {
     background-image: url("/static/bg.png");
     padding-bottom: 275px;
 }
-
-header {
-    border-bottom: 1px solid #FFFFFF;
-    height: auto;
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .titleHeader {
     font-size: 20px;
     color: #F96F33;
     font-weight: 700;
     font-style: italic;
     padding: 10px;
+    transition: text-shadow 0.3s ease;
+}
+
+a .titleHeader:hover {
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
 }
 
 .menuHeader {
@@ -125,6 +168,12 @@ header {
 .menuHeader li {
     padding-right: 25px;
     margin: auto;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.menuHeader li:hover {
+    transform: translateX(-5px);
+    text-shadow: 2px 2px 4px rgb(249, 111, 51);
 }
 
 .linksHeader {
@@ -138,15 +187,11 @@ header {
     padding: 10px;
     width: 50px;
     height: 50px;
+    transition: transform 0.3s ease; /* Плавная анимация */
 }
 
-a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-a:active {
-    color: #F96F33;
+.linksHeader img:hover {
+    transform: scale(1.1); /* Полное вращение */
 }
 
 .titleMain {
@@ -165,24 +210,6 @@ a:active {
     font-size: 19px;
 }
 
-span {
-    color: #000000;
-    font-weight: 400;
-    font-size: 25px;
-}
-
-button {
-    color: #FFFFFF;
-    background-color: #F96F33;
-    font-size: 25px;
-    font-weight: 700;
-    border: none;
-    display: block;
-    padding: 5px;
-    margin: 0 auto;
-    border-radius: 10px;
-    cursor: pointer;
-}
 /* Топ лист */
 .containerTopPlayers {
     background-color: rgba(109, 109, 109, 50%);
@@ -227,6 +254,7 @@ button {
     font-weight: 400;
     font-size: 25px;
 }
+
 /* Новостной слайдер */
 .wrapper {
     height: 350px;
@@ -352,6 +380,7 @@ button {
     transform: scale(1);
 }
 
+/*Страница регистрации и авторизации*/
 .cardReg {
     padding: 15px;
     background-color: #FFFFFF;
@@ -376,6 +405,14 @@ button {
     border-radius: 10px;
 }
 
+.cardReg button {
+    transition: box-shadow 0.3s ease-in-out; /* Плавная анимация */
+}
+
+.cardReg button:hover {
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.2);
+}
+
 .googleButton {
     background-color: #FFFFFF;
     display: flex;
@@ -396,6 +433,7 @@ button {
     margin: 0;
 }
 
+/*Ладдер*/
 .cardLadder {
     background-color: #FFFFFF;
     display: block;
@@ -430,6 +468,7 @@ button {
     margin: 13px;
 }
 
+/*Хедер другого цвета*/
 .menuHeaderWhite {
     font-size: 19px;
     color: #000000;
@@ -443,6 +482,12 @@ button {
 .menuHeaderWhite li {
     padding-right: 25px;
     margin: auto;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.menuHeaderWhite li:hover {
+    transform: translateX(-5px);
+    text-shadow: 2px 2px 4px rgb(249, 111, 51);
 }
 
 .menuHeaderWhite a {
@@ -450,6 +495,7 @@ button {
     text-decoration: none;
 }
 
+/*Страница команды*/
 .avatarProfile {
     display: flex;
     align-items: end;
@@ -552,6 +598,7 @@ button {
     justify-content: space-around;
 }
 
+/*Страница матча*/
 .matchTeam {
     display: block;
 }

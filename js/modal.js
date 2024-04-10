@@ -1,9 +1,10 @@
 const modal = document.getElementById("myModal");
+const searchImg = document.getElementById("searchImg");
 const searchButton = document.getElementById("searchButton");
 const span = document.getElementsByClassName("close")[0];
 const body = document.body;
 
-searchButton.onclick = function() {
+searchImg.onclick = function() {
     modal.style.display = "block";
     body.classList.add("body-no-scroll");
 }
