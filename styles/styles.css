@@ -140,7 +140,8 @@ button:hover {
 /* Главная */
 .containerWithImage {
     background-image: url("/static/bg.png");
-    padding-bottom: 275px;
+    padding-bottom: 500px;
+    background-repeat: repeat-x;
 }
 .titleHeader {
     font-size: 20px;
@@ -221,9 +222,7 @@ a .titleHeader:hover {
     font-weight: 700;
     text-align: center;
     font-size: 40px;
-    background: radial-gradient(circle, #FFFFFF, #F96F33, #F96F33, #FFFFFF);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: #000000;
 }
 
 .containerCards {
@@ -396,6 +395,11 @@ a .titleHeader:hover {
     font-size: 25px;
 }
 
+.textRegLogin {
+    font-size: 15px;
+    font-style: normal;
+}
+
 .cardReg input {
     display: block;
     margin: 15px auto;
@@ -477,6 +481,10 @@ a .titleHeader:hover {
     display: flex;
     justify-content: center;
     height: auto;
+}
+
+.nickname {
+    color: #F96F33;
 }
 
 .menuHeaderWhite li {

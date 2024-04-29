@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Вход</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="http://176.109.110.111/styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
@@ -14,17 +14,20 @@
             <a href="index.html"><p class="titleHeader">Basket Place</p></a>
         </header>
         <div style="margin-top: 276px">
-            <div class="cardReg">
+            <form class="cardReg" id="regForm">
                 <p>Вход</p>
-                <input placeholder="E-mail" type="email">
-                <input placeholder="Пароль" type="password">
-                <button>Войти</button>
+                <input placeholder="E-mail" type="email" id="email">
+                <input placeholder="Пароль" type="password" id="password">
+                <button type="submit">Войти</button>
                 <button class="googleButton">
                     Sign in with Google
                     <img src="static/google.svg" alt="">
                 </button>
-            </div>
+                <p class="textRegLogin">Нет аккаунта?</p>
+                <a href="reg.html"><p>Регистрация</p></a>
+            </form>
         </div>
     </section>
+<script src="./js/login.js"></script>
 </body>
 </html>
