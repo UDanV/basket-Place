@@ -14,7 +14,7 @@
           <ul class="menuHeaderWhite">
             <li><a href="ladder.html">Ладдер</a></li>
             <li><a href="match.html">Матчи</a></li>
-            <li><a href="team.html">Команды</a></li>
+            <li><a href="createTeam.html">Команды</a></li>
           </ul>
           <div class="linksHeader">
             <a href="#"><img src="static/SearchBlack.svg" alt=""></a>
@@ -23,12 +23,16 @@
     <div class="avatarProfile">
         <img style="border-radius: 50%" src="static/logoPreview.png">
         <div>
-            <a href="#"><img class="editImg" src="static/Edit.svg"></a>
-            <a href="#"><img class="editImg" src="static/Exit.svg" id="logout"></a>
+            <input  onchange="attemptUpload()" style="display: none" type="file" id="fileInput">
+            <label for="fileInput" class="fileInputLabel">
+                <img style="cursor: pointer;" class="editImg" src="static/Edit.svg">
+            </label>
+            <a href="#" onclick="logout()"><img class="editImg" src="static/Exit.svg" id="logout"></a>
         </div>
     </div>
-    <h2 style="text-align: center">Назар</h2>
-    <h2 style="text-align: center"><span style="color: #000000">udanv@vk.com</span></h2>
+    <h2 id="userNickname" class="nickname"></h2>
+    <h2 id="userEmail" style="text-align: center"><span style="color: #000000"></span></h2>
     <button style="margin-top: 20px">Сменить пароль</button>
+<script src="./js/user.js"></script>
 </body>
 </html>

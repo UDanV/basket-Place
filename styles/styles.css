@@ -629,3 +629,19 @@ a .titleHeader:hover {
     font-size: 15px;
     padding: 10px;
 }
+
+.inputCreate {
+    width: 20%;
+    margin: auto;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.containerCreateTeam {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+}
